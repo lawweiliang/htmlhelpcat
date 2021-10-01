@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="mt-3 mb-3">
+      <h2>User Table</h2>
+    </div>
+
+    <table id="user-table" class="display">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Address</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td>1</td>
+        <td>Kang</td>
+        <td>kang@gmail.com</td>
+        <td>0125265252</td>
+        <td>Kampung Bao 1234</td>
+        <td><a href=""><i class="fa-solid fa-pen"></i></a></td>
+        <td><a href="" style="color:red"><i class="fa-solid fa-trash-can"></i></a></td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Tong</td>
+        <td>tong@gmail.com</td>
+        <td>0115265252</td>
+        <td>Smart Village</td>
+        <td><a href=""><i class="fa-solid fa-pen"></i></a></td>
+        <td><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Apple</td>
+        <td>apple@gmail.com</td>
+        <td>0125265252</td>
+        <td>Sakai Village 12345</td>
+        <td><a href=""><i class="fa-solid fa-pen"></i></a></td>
+        <td><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>lily</td>
+        <td>lily@gmail.com</td>
+        <td>0125265252</td>
+        <td>Mari Kampung Bao</td>
+        <td><a href=""><i class="fa-solid fa-pen"></i></a></td>
+        <td><a href=""><i class="fa-solid fa-trash-can"></i></a></td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+
+    $(document).ready(() => {
+      $('#user-table').DataTable({
+        'paging': false,
+        'searching': false,
+        'info': false
+      });
+    });
+
+  </script>
+</body>
+
+</html>
